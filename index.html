@@ -2,34 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Ally Harp Portfolio</title>
 </head>
 <body>
-    <header><nav class="navbar">
-        <ul class="link-group">
-            <li class="link act"><a href="index.html">home</a></li>
-            <li class="link"><a href="projects.html">projects</a></li>
-            <li class="link"><a href="about.html">about</a></li>
-            <li class="link"><a href="#">contact</a></li>
-        </ul>
-    </nav></header>
+        <div class="topnav" id="myTopnav">
+        
+              <a href="index.html" class="act">home</a>
+                <a href="projects.html">projects</a>
+              <a href="about.html">about</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+              </div>
 
-
+    <script>
+        function myFunction() {
+            var x =
+            document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
  
     <section id="hero">
-        <img src="images/IMG_5081.jpg" width="300px" height="300px" class="ally">
+        <div class="herotitle">
+      <img src="images/IMG_5081.jpg" width="300px" height="300px" class="ally">
+        <div class="flexcolumn">
+        <b><h1 class="name">ALLY HARP</h1></b>
+        <hr>
+        <h2 class="occupation">Web Designer</h2>
+    </div>
+    </div>
     </section>
 
     <div class="buttons">
-        <a href="/images/Allison-Harp-Resume.pdf" download class="button1" style="display:inline-block; text-decoration:none; color:white; margin-right:20px;"><h1>DOWNLOAD RESUME</h1></a>
+        <a href="/images/Ally-Harp-Resume.pdf" download class="button1" style="display:inline-block; text-decoration:none; color:white; margin-right:20px;"><h1>DOWNLOAD RESUME</h1></a>
         <a href="projects.html" class="button2" style="display:inline-block; text-decoration:none; color:white;"><h1>SEE MY WORK</h1></a>
         
         </div>
 
-        <div class="row">
-            <div class="column">
+        <div class="section group">
+            <div class="col span_1_of_4">
                 <h3 class="title">Programming Languages <i class="fa-solid fa-code" style="color:#929292;"></i></h3>
             <ul>
                 <li>CSS</li>
@@ -38,7 +56,7 @@
                 <li>JavaScript</li>
             </ul>
                         </div>
-            <div class="column"><h3 class="title">Software Experience <i class="fa-solid fa-wrench" style="color:#929292;"></i></h3>
+            <div class="col span_1_of_4"><h3 class="title">Software Experience <i class="fa-solid fa-wrench" style="color:#929292;"></i></h3>
             <ul>
                 <li>Microsoft Office Suite</li>
                 <li>Salesforce Marketing Cloud</li>
@@ -48,7 +66,7 @@
                 <li>Ceros</li>
             </ul>
         </div>
-            <div class="column">
+            <div class="col span_1_of_4">
                 <h3 class="title">CMS Experience <i class="fa-solid fa-network-wired" style="color:#929292;"></i></h3>
             <ul>
                 <li>Adobe Experience Manager</li>
@@ -58,15 +76,26 @@
                 <li>Wix</li>   
             </ul>
         </div>
-            <div class="column"><h3 class="title">Other Skills <i class="fa-solid fa-gears" style="color:#929292;"></i></h3>
+            <div class="col span_1_of_4"><h3 class="title">Other Skills <i class="fa-solid fa-gears" style="color:#929292;"></i></h3>
                 <ul>
                     <li>Marketing & Advertising</li>
+                    <li>Social Media Management</li>
                     <li>Instructional Design</li>
                     <li>Graphic Design</li>
-                    <li>UX Design</li>
+                    <li>UX/UI Design</li>
+                    
                 </ul>
             </div>
           </div>
 
 </body>
+
+<footer>
+    <div class="footer-content">
+        <h3>Developed by Ally Harp, 2022</h3>
+        <ul class="socials">
+            <li><a href="mailto:allymharp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+         </ul>
+    </div>
+    </footer>
 </html>
