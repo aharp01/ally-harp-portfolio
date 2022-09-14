@@ -196,10 +196,19 @@ margin-top: 20px;
  
 }
 
+.banner-kran {
+  width:80%; 
+  text-align: center; 
+  margin-left:100px;
+}
+
  
 @media only screen and (max-width: 800px) {
 #hero {
   height:200px;
+}
+.banner-kran{
+  margin-left:10%;
 }
 }
 
